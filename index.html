@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +10,10 @@
     <link rel="icon" href="./Assets/E.png">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/jquery-imagemapster@1.2.10/dist/jquery.imagemapster.min.js"></script>
-
-    <script>
-        var resizeTime = 100;
-        var resizeDelay = 100;
-
-        $('img').mapster({
-            areas: [
-                {
-                    key: 'tbl',
-                    // fillColor: 'fffff',
-                    // staticState: true,
-                    stroke: false,
-                }
-            ],
-            mapKey: 'state'
-        });
-
-        // Resize the map to fit within the boundaries provided
-
-        function resize(maxWidth, maxHeight) {
-            var image = $('img'),
-                imgWidth = image.width(),
-                imgHeight = image.height(),
-                newWidth = 0,
-                newHeight = 0;
-
-            if (imgWidth / maxWidth > imgHeight / maxHeight) {
-                newWidth = maxWidth;
-            } else {
-                newHeight = maxHeight;
-            }
-            image.mapster('resize', newWidth, newHeight, resizeTime);
-        }
-
-        function onWindowResize() {
-
-            var curWidth = $(window).width(),
-                curHeight = $(window).height(),
-                checking = false;
-            if (checking) {
-                return;
-            }
-            checking = true;
-            window.setTimeout(function () {
-                var newWidth = $(window).width(),
-                    newHeight = $(window).height();
-                if (newWidth === curWidth &&
-                    newHeight === curHeight) {
-                    resize(newWidth, newHeight);
-                }
-                checking = false;
-            }, resizeDelay);
-        }
-
-        $(window).bind('resize', onWindowResize);
-    </script>
-    
 </head>
+
 <body>
     <div class="upper">
         <div>
@@ -83,8 +28,8 @@
                 <area shape="poly"
                     coords="215,1924,243,1887,243,1867,231,1842,231,1819,247,1744,248,1697,248,1662,246,1550,262,1525,320,1548,377,1559,411,1537,418,1501,401,1469,358,1447,312,1432,254,1431,235,1420,221,1379,195,1379,168,1387,161,1418,176,1447,199,1451,177,1468,178,1479,170,1506,168,1562,168,1615,148,1648,130,1654,96,1616,87,1561,83,1513,59,1488,34,1495,15,1546,13,1611,1,1656,-2,1907"
                     alt="backCamel" onclick=href="coffee.htm" data-maphilight='' state="tbl">
-                <area shape="rect" coords="1104,567,1499,839" alt="cloudsRight" onclick=href="coffee.htm" data-maphilight=''
-                    state="tbl">
+                <area shape="rect" coords="1104,567,1499,839" alt="cloudsRight" onclick=href="coffee.htm"
+                    data-maphilight='' state="tbl">
                 <area shape="rect" coords="441,492,2,739" alt="cloudsLeft" onclick=href="coffee.htm" data-maphilight=''
                     state="tbl">
             </map>
@@ -111,9 +56,15 @@
         <div class="ice">
             <img src="./Assets/AIR AND GLACIERS.png" alt="AIR AND GLACIERS" usemap="#glaciers">
             <map name="glaciers" class="pointer">
-                <area shape="poly" coords="1429,2132,1398,2081,1372,2049,1397,2016,1383,1975,1342,1945,1319,1945,1287,1969,1281,2027,1236,2031,1193,2040,1140,2059,1092,2073,1054,2112,1014,2060,981,2057,957,2076,948,2122,959,2163,978,2188,990,2202,994,2296,1027,2366,1091,2464,1128,2476,1112,2536,1080,2594,1062,2610,997,2631,985,2657,1010,2652,1043,2647,1120,2648,1175,2591,1208,2559,1393,2324,1420,2212" alt="bear" onclick=href="computer.htm" data-maphilight='' state="tbl">
-                <area shape="poly" coords="530,3499,536,3350,533,3223,583,3181,534,3183,505,3058,459,2989,406,2971,360,2973,301,2998,273,3039,239,2962,196,2908,125,2888,60,2912,27,2999,11,3035,3,3054,0,3239,110,3301,224,3313,325,3385,392,3466,426,3499,500,3497,508,3499" alt="penguin" onclick=href="phone.htm" data-maphilight='' state="tbl"> 
-                <area shape="poly" coords="717,1340,572,1140,566,1117,588,1105,626,1096,806,1089,635,1052,614,1029,564,1033,548,1050,524,1036,394,952,190,789,134,769,162,821,352,1010,341,1022,220,1022,174,985,185,1018,81,1007,142,1083,220,1083,279,1182,39,1198,84,1247,120,1258,152,1309,169,1337,183,1348,205,1373,145,1395,20,1405,63,1452,125,1458,157,1458,217,1463,242,1463,285,1456,332,1495,370,1524,401,1537,418,1543,312,1438,312,1426,338,1430,364,1423,482,1409,356,1393,323,1368,283,1377,240,1352,154,1278,141,1262,376,1295,455,1364,576,1462,438,1278,474,1266,605,1251,482,1227,442,1202,386,1210,272,1091,492,1144,688,1335" alt="birds" onclick=href="http://summerstyle.github.io/summer/#" data-maphilight='' state="tbl">
+                <area shape="poly"
+                    coords="1429,2132,1398,2081,1372,2049,1397,2016,1383,1975,1342,1945,1319,1945,1287,1969,1281,2027,1236,2031,1193,2040,1140,2059,1092,2073,1054,2112,1014,2060,981,2057,957,2076,948,2122,959,2163,978,2188,990,2202,994,2296,1027,2366,1091,2464,1128,2476,1112,2536,1080,2594,1062,2610,997,2631,985,2657,1010,2652,1043,2647,1120,2648,1175,2591,1208,2559,1393,2324,1420,2212"
+                    alt="bear" onclick=href="computer.htm" data-maphilight='' state="tbl">
+                <area shape="poly"
+                    coords="530,3499,536,3350,533,3223,583,3181,534,3183,505,3058,459,2989,406,2971,360,2973,301,2998,273,3039,239,2962,196,2908,125,2888,60,2912,27,2999,11,3035,3,3054,0,3239,110,3301,224,3313,325,3385,392,3466,426,3499,500,3497,508,3499"
+                    alt="penguin" onclick=href="phone.htm" data-maphilight='' state="tbl">
+                <area shape="poly"
+                    coords="717,1340,572,1140,566,1117,588,1105,626,1096,806,1089,635,1052,614,1029,564,1033,548,1050,524,1036,394,952,190,789,134,769,162,821,352,1010,341,1022,220,1022,174,985,185,1018,81,1007,142,1083,220,1083,279,1182,39,1198,84,1247,120,1258,152,1309,169,1337,183,1348,205,1373,145,1395,20,1405,63,1452,125,1458,157,1458,217,1463,242,1463,285,1456,332,1495,370,1524,401,1537,418,1543,312,1438,312,1426,338,1430,364,1423,482,1409,356,1393,323,1368,283,1377,240,1352,154,1278,141,1262,376,1295,455,1364,576,1462,438,1278,474,1266,605,1251,482,1227,442,1202,386,1210,272,1091,492,1144,688,1335"
+                    alt="birds" onclick=href="http://summerstyle.github.io/summer/#" data-maphilight='' state="tbl">
             </map>
         </div>
         <div class="aquatic">
@@ -129,14 +80,68 @@
                     coords="1100,2965,1073,2940,1016,2952,993,2982,952,2965,891,3000,875,3038,821,3043,792,3068,785,3100,830,3100,900,3099,949,3092,992,3079,1045,3067,1083,3013,1099,2992"
                     alt="corals" onclick=href="coffee.htm" data-maphilight='' state="tbl">
                 <area shape="poly"
-                    coords="199,1463,222,1477,258,1492,316,1501,348,1475,378,1472,414,1435,459,1434,515,1434,554,1450,610,1466,601,1415,613,1426,622,1452,645,1473,653,1493,679,1508,708,1532,814,1595,790,1605,699,1619,654,1609,622,1602,588,1597,529,1595,504,1609,486,1618,459,1630,437,1647,405,1689,366,1704,336,1715,323,1713,312,1721,293,1721,271,1721,274,1689,267,1652,259,1602,247,1561,235,1520,214,1505,203,1492" 
+                    coords="199,1463,222,1477,258,1492,316,1501,348,1475,378,1472,414,1435,459,1434,515,1434,554,1450,610,1466,601,1415,613,1426,622,1452,645,1473,653,1493,679,1508,708,1532,814,1595,790,1605,699,1619,654,1609,622,1602,588,1597,529,1595,504,1609,486,1618,459,1630,437,1647,405,1689,366,1704,336,1715,323,1713,312,1721,293,1721,271,1721,274,1689,267,1652,259,1602,247,1561,235,1520,214,1505,203,1492"
                     alt="backFish" onclick=href="coffee.htm" data-maphilight='' state="tbl">
             </map>
         </div>
     </div>
-    
+
 </body>
 
+<script>
+    var resizeTime = 100;
+    var resizeDelay = 100;
 
+    $('img').mapster({
+        areas: [
+            {
+                key: 'tbl',
+                // fillColor: 'fffff',
+                // staticState: true,
+                stroke: false,
+            }
+        ],
+        mapKey: 'state'
+    });
+
+    // Resize the map to fit within the boundaries provided
+
+    function resize(maxWidth, maxHeight) {
+        var image = $('img'),
+            imgWidth = image.width(),
+            imgHeight = image.height(),
+            newWidth = 0,
+            newHeight = 0;
+
+        if (imgWidth / maxWidth > imgHeight / maxHeight) {
+            newWidth = maxWidth;
+        } else {
+            newHeight = maxHeight;
+        }
+        image.mapster('resize', newWidth, newHeight, resizeTime);
+    }
+
+    function onWindowResize() {
+
+        var curWidth = $(window).width(),
+            curHeight = $(window).height(),
+            checking = false;
+        if (checking) {
+            return;
+        }
+        checking = true;
+        window.setTimeout(function () {
+            var newWidth = $(window).width(),
+                newHeight = $(window).height();
+            if (newWidth === curWidth &&
+                newHeight === curHeight) {
+                resize(newWidth, newHeight);
+            }
+            checking = false;
+        }, resizeDelay);
+    }
+
+    $(window).bind('resize', onWindowResize);
+</script>
 
 </html>
