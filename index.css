@@ -1,4 +1,9 @@
-.upper,.lower {
+body {
+    position: relative;
+}
+
+.upper,
+.lower {
     display: flex;
 }
 
@@ -11,4 +16,20 @@ img[usemap] {
 
 .pointer {
     cursor: pointer;
+}
+
+/* .ecologo {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    font-size: 18px;
+    z-index: 1;
+} */
+
+.ecologo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
