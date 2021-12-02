@@ -9,3 +9,15 @@ img[usemap] {
     max-width: 100%;
     width: auto;
 }
+
+img[usemap]:hover {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    color: brown;
+}
+
+.pointer {
+    cursor: pointer;
+}
