@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="upper">
-        <div>
+    <div class="container">
+        <div class="item1">
             <img src="./Assets/DESERT.png" alt="DESERT" usemap="#desert">
             <map name="desert" class="pointer">
                 <area shape="poly"
@@ -32,7 +32,7 @@
                 <area shape="rect" coords="441,492,2,739" alt="cloudsLeft" onclick=href="coffee.htm" data-maphilight='' state="tbl" title="CLOUD FACTS">
             </map>
         </div>
-        <div>
+        <div class="item2">
             <img src="./Assets/FOREST.png" alt="FOREST" usemap="#forest">
             <map name="forest" class="pointer">
                 <area shape="poly"
@@ -47,11 +47,11 @@
             </map>
         </div>
     </div>
-    <div class="logo" style="background-color: darkolivegreen;">
+    <div class="logo item3" style="background-color: darkolivegreen;">
         <img class="ecologo" src="./Assets//PNG ASSETSZ/assembled/Group 143.png" alt="ecologo">
     </div>
-    <div class="lower">
-        <div class="ice">
+    <div class="container">
+        <div class="item4">
             <img src="./Assets/AIR AND GLACIERS.png" alt="AIR AND GLACIERS" usemap="#glaciers">
             <map name="glaciers" class="pointer">
                 <area shape="poly"
@@ -62,10 +62,11 @@
                     alt="penguin" onclick=href="phone.htm" data-maphilight='' state="tbl" title="PENGUIN FACTS">
                 <area shape="poly"
                     coords="717,1340,572,1140,566,1117,588,1105,626,1096,806,1089,635,1052,614,1029,564,1033,548,1050,524,1036,394,952,190,789,134,769,162,821,352,1010,341,1022,220,1022,174,985,185,1018,81,1007,142,1083,220,1083,279,1182,39,1198,84,1247,120,1258,152,1309,169,1337,183,1348,205,1373,145,1395,20,1405,63,1452,125,1458,157,1458,217,1463,242,1463,285,1456,332,1495,370,1524,401,1537,418,1543,312,1438,312,1426,338,1430,364,1423,482,1409,356,1393,323,1368,283,1377,240,1352,154,1278,141,1262,376,1295,455,1364,576,1462,438,1278,474,1266,605,1251,482,1227,442,1202,386,1210,272,1091,492,1144,688,1335"
-                    alt="birds" onclick=href="http://summerstyle.github.io/summer/#" data-maphilight='' state="tbl" title="BIRD FACTS">
+                    alt="birds" onclick=href="http://summerstyle.github.io/summer/#" data-maphilight='' state="tbl"
+                    title="BIRD FACTS">
             </map>
         </div>
-        <div class="aquatic">
+        <div class="item5">
             <img src="./Assets/AQUATIC.png" alt="AQUATIC" usemap="#aquatic">
             <map name="aquatic" class="pointer">
                 <area shape="poly"
@@ -83,7 +84,6 @@
             </map>
         </div>
     </div>
-
 </body>
 
 <script>
@@ -94,7 +94,7 @@
         areas: [
             {
                 key: 'tbl',
-                // fillColor: 'fffff',
+                // fillColor: '00000',
                 // staticState: true,
                 stroke: false,
             }
