@@ -34,6 +34,7 @@ img[usemap] {
     border-radius: 16px;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     text-transform: uppercase;
+    z-index: 1;
 }
 
 .energy:after{background-color: #955128;}
