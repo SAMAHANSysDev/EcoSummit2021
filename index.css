@@ -88,6 +88,18 @@ img[usemap] {
         padding: 2.5px 5px;
         border-radius: 8px;
     }
+
+    .modal-body>p {
+        font-size: .8rem;
+    }
+
+    .modal-body>h1 {
+        font-size: .8rem;
+    }
+
+    .modal-body>button {
+        font-size: .8rem;
+    }
 }
 
 .note {
@@ -131,7 +143,7 @@ img[usemap] {
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 30%;
+    width: 40%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -140,7 +152,7 @@ img[usemap] {
     text-align: center;
     align-content: center;
     border-radius: 20px;
-    height: 45%;
+    height: 60%;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 1.2rem;
 }
@@ -174,7 +186,7 @@ img[usemap] {
 .close {
     color: white;
     background-color: darkolivegreen;
-    float: right;
+    /* float: right; */
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -197,6 +209,6 @@ img[usemap] {
     align-content: center;
 }
 
-p{
+p {
     margin-top: 5px;
 }
