@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+.e{
+    max-width: 100px;
+}
+
 .container {
     display: grid;
     overflow: hidden;
@@ -100,6 +104,13 @@ img[usemap] {
     .modal-body>button {
         font-size: .8rem;
     }
+    .e{
+        width: 70px;
+    }
+    .modal-content{
+        height: 0%;
+    }
+
 }
 
 .note {
