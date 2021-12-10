@@ -131,7 +131,7 @@ img[usemap] {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 12%;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -152,9 +152,9 @@ img[usemap] {
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
+    padding: 3%;
     border: 1px solid #888;
-    width: 40%;
+    width: fit-content;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -163,7 +163,7 @@ img[usemap] {
     text-align: center;
     align-content: center;
     border-radius: 20px;
-    height: 55%;
+    /* height: 55%; */
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 1.2rem;
 }
@@ -215,10 +215,10 @@ img[usemap] {
     cursor: pointer;
 }
 
-.modal-body {
+/* .modal-body {
     padding: 60px 15px;
     align-content: center;
-}
+} */
 
 p {
     margin-top: 5px;
