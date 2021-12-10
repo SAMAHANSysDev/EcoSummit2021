@@ -163,7 +163,7 @@ img[usemap] {
     text-align: center;
     align-content: center;
     border-radius: 20px;
-    /* height: 55%; */
+    height: fit-content;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 1.2rem;
 }
